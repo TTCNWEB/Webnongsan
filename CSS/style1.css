@@ -1,0 +1,164 @@
+.unpadded{padding:0!important}
+.unpadded-y{padding-top:0!important;padding-bottom:0!important}
+.basic-box{box-shadow: none!important;border: 0!important;border-radius: 0!important;}
+.bg-sd {background: rgb(30, 74, 28)}
+.trans-bcolored {background: transparent!important;}
+.wm-menu.nav-main{margin:0;}
+#row-fotter-one .ui.menu{
+  background:transparent;
+}
+.banner{background-color: #FFF;border-bottom: 1px solid #F5F5F5;}
+.banner .wm-module.wm-search button.ui.button {
+    display: none;
+}
+.banner .wm-module.wm-search input[type=text]{
+    border: 1px solid #36ba34!important;
+    border-radius:3px!important;
+}
+.banner .wm-module.wm-menu > .item,.banner .wm-module.wm-menu .menu.right > .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .wm-module.wm-menu > .item:hover, .banner .wm-module.wm-menu .menu.right > .item:hover{
+    background: #e7e7e7!important;
+}
+
+.banner .wm-module.wm-menu.icon.labeled > .item i.icon,.banner .wm-module.wm-menu .menu.right > .item i.icon {
+    font-size: 3em!important;
+    color: #36ba34;
+}
+.banner .wm-module.wm-menu > .item i.icon.dropdown{display:none}
+#row-fotter-one .ui.menu .item,#row-fotter-one .ui.menu .item:hover{
+   color:#fff;
+}
+#row-fotter-one .header.item{font-size:}
+#row-fotter-one .wm-module.wm-menu .header.item,#row-fotter-one  .wm-free-text .ui.header {
+    font-size: 0.9em!important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .92857143em 1.14285714em;
+}
+#row-fotter-one .wm-module.wm-menu .header.item,#row-fotter-one  .wm-free-text .ui.header {
+    font-size: 1em!important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .92857143em 1.14285714em;
+    /* margin: 0; */
+}
+.wm-module.wm-product .header {
+    font-size: 2em;
+}
+div#row-fotter-one .wm-module.wm-menu .item:not(.header),div#row-fotter-one .wm-module.wm-free-text .content{
+    color: #ccc!important;
+    font-size:.9em!important;text-transform:lowercase
+}
+
+.bg-ft.wm-mobile.column {
+    background:#404040 url(http://amthuc.webmau.vn/web/shop/images/amthuc/bread.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.owl-carousel .owl-item img{
+  max-width:100%;
+  margin:auto;
+  width:initial!important;
+}
+.wm-module.wm-product .content .header h2 {font-size: 1.1em;}
+
+.lbl-ft >.header{
+  font-size: 3em!important;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 15px;
+    color: #36ba34;
+    margin-bottom: 1.3em;
+    border: none!important;
+}
+.wm-module.lbl-sd >.header {
+    border: none!important;
+    position: relative;
+    overflow: hidden;
+    color: #555;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.wm-module.lbl-sd >.header:after {
+    position: absolute;
+    content: "";
+    top: 53%;
+    left: auto;
+    height: 1px;
+    background: #d4d4d5;
+    z-index: -1;
+    width: 100%;
+    margin-left: 20px;
+}
+.wm-module.wm-post .image img,.wm-module.wm-product .image img {
+    border-radius: 100%!important;
+    overflow: hidden;
+}
+.wm-module.wm-post .image.wm-dimmer,.wm-module.wm-product .image.wm-dimmer {
+    background:transparent;
+}
+.wm-module .card >.content{
+    border:0!important;
+}
+.wm-module.wm-product .card,.wm-module.wm-post .card{box-shadow:none!important}
+.wm-module.wm-product,.wm-module.wm-post:not(:last-child){margin-bottom:4em;}
+.wm-module.wm-product .right.floated.meta{
+  margin-top:10px;display:inline-block;
+}
+
+.bg-img-primary.wm-mobile.column {
+    background: transparent url(http://amthuc.webmau.vn/web/shop/images/amthuc/posts/footer_info_img_bg.jpg) no-repeat center bottom;
+   padding-bottom: 150px!important;
+}
+.bg-img-primary.wm-mobile.column .container{
+    background:#fff;
+}
+.wm-module.wm-breadcrumb .segment {
+    box-shadow: none;
+    border: navajowhite;
+    padding: 5px 0;
+}
+.lbl-ft{
+  margin-top: 20px;
+}
+.lbl-ft h3{
+    display: none;
+}
+.lbl-ft .ui.dividing.header{
+  padding: 0;
+}
+.title-tintuc h1{
+  color: #36ba34;
+    font-size: 40px;
+}
+.title-tintuc h1:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #36ba34;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.title-tintuc{
+    position: relative;
+}
+.wm-module.wm-post .image img{
+  border-radius: 5px!important;
+}
+@media (max-width:767px){
+  .wm-widget.wm-cart:after {
+    display: block;
+    clear: both;
+    content: "";
+    margin-bottom: 15px;
+}
+}
