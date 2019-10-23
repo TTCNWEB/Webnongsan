@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nông Sản Sạch | Trang chủ</title>
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/phone_new.css">
+    <link rel="stylesheet" type="text/css" href="CSS/gg_translate.css">
+    <link rel="stylesheet" type="text/css" href="CSS/filter_product.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="JS/dangnhap.js" />
+</head>
+
+<body class="index ">
+    <div class="ui padded grid">
+        <div class="banner  wm-mobile column">
+            <div id='first-row' class="ui grid  wm-mobile container">
+                <div class="three wide large three wide computer sixteen wide tablet sixteen wide mobile column unpadded-y middle aligned">
+                    <style>
+                        .wm-module.wm-image .image-9:before {
+                            z-index: 2;
+                            background: rgba(0, 0, 0, 0.51);
+                        }
+                        
+                        .wm-module.wm-image .image-9 {
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div class="wm-module wm-image" onclick="location.href='home.html'">
+                        <div class="image-9">
+                            <img class="ui rounded left floated image" src="IMG/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide large four wide computer eight wide tablet sixteen wide mobile column unpadded-y center aligned middle aligned">
+                    <div class="wm-module wm-search">
+                        <div class="middle aligned content">
+                            <!-- <form action="/search/" method="post"> -->
+                            <div class="ui action fluid left icon input">
+                                <i class="search icon"></i>
+                                <style>
+                                    .ui.icon.input>i.icon:after,
+                                    .ui.icon.input>i.icon:before {
+                                        width: 50%;
+                                    }
+                                    
+                                    .ui.action.input:not([class*="left action"])>input {
+                                        border-top-right-radius: 0!important;
+                                        border-bottom-right-radius: 0!important;
+                                        border: 1px;
+                                    }
+                                </style>
+                                <input class="txtKeyword" name="keyword" type="text" placeholder="Từ khóa" autocomplete="off" value="" onkeypress="if(event.keyCode === 13) location.href = '/search/' + $(this).val();">
+                                <button type="button" class="ui button" onclick="
+                                var keyword = $(this).closest('div').find('.txtKeyword').val();
+                                location.href = 'home.html' + keyword; "> Tìm</button>
+                            </div>
+                            <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="large computer tablet only nine wide large nine wide computer eight wide tablet column unpadded-y middle aligned">
+                    <nav class="wm-module wm-menu ui default small borderless menu basic-box icon labeled computer tablet mobile only wm-men-504">
+                        <a class="item" href="#"><i class="icon birthday"></i>Thực phẩm tươi</a><a class="item" href="/pro-category/rau-cu-qua/"><i class="icon bomb"></i>Rau-củ-quả</a>
+                        <a class="item" href="#"><i class="icon  apple "></i>Trái cây</a>
+                        <div class="menu right"><a class="item" href="/carts"><i class="icon shop"></i>Giỏ hàng</a></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="Home.html" class="text-uppercase"> <span>TRANG CHỦ</span></a>
+            </li>
+            <li>
+                <a href="Introduction.html" class="text-uppercase"> <span>GIỚI THIỆU</span></a>
+            </li>
+            <li>
+                <a href="Account.html" class="text-uppercase"><span>TÀI KHOẢN</span></a>
+            </li>
+            <li>
+                <a href="Login.html" class="text-uppercase"> <span>ĐĂNG NHẬP</span></a>
+            </li>
+            <li>
+                <a href="register.html" class="text-uppercase"><span>ĐĂNG KÍ</span></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="ui padded grid">
+        <div class=" wm-mobile column">
+            <div class="ui grid  wm-mobile container">
+                <div class="large computer tablet only eight wide large eight wide computer eight wide tablet column"></div>
+                <div class="eight wide large eight wide computer eight wide tablet sixteen wide mobile column">
+
+                    <form name="frmLogin" class="frmLogin ui form " action="" method="POST" onsubmit="return dangnhap()">
+
+                        <div class="field">
+                            <label>Email đăng nhập</label>
+                            <input type="text" name="txtEmail" placeholder="Email đăng nhập" value="" onblur="myFunction()">
+                        </div>
+
+                        <div class="field">
+                            <label>Mật khẩu</label>
+                            <input type="password" name="txtPassword" placeholder="Mật khẩu">
+                        </div>
+                        <div id="divloi"></div>
+                        <div class="field">
+                            <a href="https://amthuc.weba.vn/reset-password">Quên mật khẩu?</a>
+                            <span> | </span>
+                            <a href="https://amthuc.weba.vn/register">Chưa có tài khoản?</a>
+                        </div>
+
+                        <div class="field">
+                            <button class="ui button" type="submit" name="btnLogin">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui padded grid ">
+        <div class="bg-ft wm-mobile column ">
+            <div id='row-fotter-one' class="ui grid wm-mobile container ">
+                <div class="three wide large three wide computer sixteen wide tablet sixteen wide mobile column ">
+                    <div class="wm-module wm-image ">
+                        <div class="image-32 ">
+                            <img class="ui fluid image " src="IMG/logo.png " alt="Logo ">
+                        </div>
+                    </div>
+                    <div class="wm-module wm-free-text ">
+                        <!-- <div class="content "> -->
+                        <p>Chúng tôi tin chất lượng là dịch vụ tốt nhất.</p>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="three wide large three wide computer sixteen wide tablet sixteen wide mobile column ">
+                    <nav class="wm-module wm-menu ui inverted red vertical fluid borderless menu computer tablet mobile only wm-men-671 ">
+                        <h4 class="header item ">GIỚI THIỆU</h4><a class="item " href="https://amthuc.weba.vn/404 ">Hỗ trợ khách hàng</a><a class="item " href="https://amthuc.weba.vn/404 ">Điều khoản & dịch vụ</a><a class="item " href="https://amthuc.weba.vn/404 ">Hướng dẫn thanh toán</a>
+                        <div class="menu right "></div>
+                    </nav>
+                </div>
+                <div class="sixteen wide large three wide computer sixteen wide tablet sixteen wide mobile column ">
+                    <nav class="wm-module wm-menu ui inverted red vertical fluid borderless menu computer tablet mobile only wm-men-45 ">
+                        <h4 class="header item ">HỖ TRỢ KHÁCH HÀNG</h4><a class="item " href="https://amthuc.weba.vn/index ">Trang chủ</a><a class="item " href="https://amthuc.weba.vn/carts ">Giỏ hàng</a><a class="item " href="/checkout
+                ">Thanh toán</a><a class="item " href="https://amthuc.weba.vn/lien-he/ ">Liên hệ</a>
+                        <div class="menu right "></div>
+                    </nav>
+                </div>
+                <div class="three wide large three wide computer sixteen wide tablet sixteen wide mobile column ">
+                    <div class="wm-module wm-free-text ">
+                        <h2 class="ui header ">Địa chỉ</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui padded grid ">
+        <div class="black wm-mobile column ">
+            <div id='end-row' class="ui grid wm-mobile container ">
+                <div class="column ">
+                    <div class="wm-module wm-free-text ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
